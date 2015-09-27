@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+     <title>Confirm Submit Album</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="" content="" />
+    <link rel="stylesheet" type="text/css" href="Scripts/bootstrap-3.1.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/bootstrap_superhero.min.css" />
+    <style>
+      h1 { text-align: center; }
+      #box { margin-top: 20%; } 
+    </style> 
+</head>
+<body>
+
+<div id="box" class="modal col-md-6 col-md-offset-3 fade in">  
+  <div class="modal-header">  
+    <a class="close" data-dismiss="modal">X</a>  
+    <h3>Are you sure?</h3>  
+  </div>  
+  <div class="modal-body">  
+    <p>Are you sure you wish to submit this album?</p>                
+  </div>  
+  <div class="modal-footer">  
+    <a href="#" id="confirm" class="btn btn-success">Confirm</a>  
+    <a href="#" id="cancel" class="btn btn-error" data-dismiss="modal">Cancel</a>  
+  </div>  
+</div>  
+<div class="col-md-4 col-md-offset-4">
+  <button data-toggle="modal" href="#box" class="btn btn-primary btn-large">Open Dialog</button>
+</div>
+
+
+<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/JavaScript" src="Scripts/jquery-1.11.2-min.js"></script>
+<script type="text/JavaScript" src="Scripts/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

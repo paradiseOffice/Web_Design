@@ -1,0 +1,35 @@
+@import url("fonts.css");
+/**
+ *  Greyscale theme, serif, header, sans body copy
+ *  HTML, CSS3, JavaScript Ruby? SQLite3 /sVG
+ *
+ *  body background: almond or antique white
+ *  body text: dark grey
+ *  headings: almost black
+ *  Links: an underline, v. light warm grey
+ */
+
+body { 
+  font-family: body-sans, Arial, Helvetica, sans-serif;
+  color: #1c1c1c;
+}
+#landing_page { }
+
+#panorama { }
+h1, h2, h3 {
+  font-family: headings-serif, "Liberation Serif", "Times New Roman", serif;
+  color: #444;
+}
+
+.centred-element {
+  margin: auto auto;
+  text-align: center;
+}
+
+#mission-statement { text-align: justify; }
+
+ul.bottom-nav {
+
+}
+.hamburger-phone-menu { display: hidden; }
+

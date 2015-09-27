@@ -1,0 +1,75 @@
+/**
+ *
+ * Fonts for Kirk Hallam Lake website and typography settings.
+ */
+
+@font-face {
+  /* For the body copy and non-active links */
+	font-family: body-sans;
+  src: url('fonts/FiraSans-Regular.eot');
+  src: url('fonts/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FiraSans-Regular.svg#FiraSans-Regular') format('svg'),
+    url('fonts/FiraSans-Regular.ttf') format('truetype'),
+    url('fonts/FiraSans-Regular.woff') format('woff'),
+    url('fonts/FiraSans-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  /* for small titles, visited links and the strong tag */
+  font-family: body-bold;
+  src: url('fonts/FiraSans-SemiBold.eot');
+  src: url('fonts/FiraSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FiraSans-SemiBold.svg#FiraSans-SemiBold') format('svg'),
+    url('fonts/FiraSans-SemiBold.ttf') format('truetype'),
+    url('fonts/FiraSans-SemiBold.woff') format('woff'),
+    url('fonts/FiraSans-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  /* for visited links */
+  font-family: links-v;
+  src: url('fonts/FiraSans-Thin.eot');
+  src: url('fonts/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FiraSans-Thin.svg#FiraSans-Thin') format('svg'),
+    url('fonts/FiraSans-Thin.ttf') format('truetype'),
+    url('fonts/FiraSans-Thin.woff') format('woff'),
+    url('fonts/FiraSans-Thin.otf');
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  /* for em, italics */
+  font-family: body-italic;
+  src: url('fonts/FiraSans-LightItalic.eot');
+  src:  url('fonts/FiraSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FiraSans-LightItalic.svg#FiraSans-LightItalic') format('svg'),
+    url('fonts/FiraSans-LightItalic.ttf') format('truetype'),
+    url('fonts/FiraSans-LightItalic.woff') format('woff'),
+    url('fonts/FiraSans-LightItalic.otf');
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
+@font-face {
+  /* For h1-h3 headings */
+  font-family: headings-serif;
+  src: url('fonts/Ovo.eot');
+  src: url('fonts/Ovo.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Ovo.svg#Ovo') format('svg'),
+    url('fonts/Ovo.ttf') format('truetype'),
+    url('fonts/Ovo.woff') format('woff'),
+    url('fonts/Ovo-Regular.otf');
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+}
