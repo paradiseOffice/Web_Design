@@ -1,4 +1,5 @@
 @import url("fonts.css");
+@import url("windles-bootstrap.min.css");
 /**
  *  Greyscale theme, serif, header, sans body copy
  *  HTML, CSS3, JavaScript Ruby? SQLite3 /sVG
@@ -15,10 +16,50 @@ body {
 }
 #landing_page { }
 
-#panorama { }
+#panorama {
+  width: 100%;
+  height: 500px;
+  /* background-image: url('../photos/panorama_large.jpg'); */
+  background-size: 100% 100%;
+}
+@media (min-width: 1750px) {
+  #panorama { 
+    background-image: url('../photos/panorama_large.jpg');
+  }
+}
+@media (min-width: 1024px) and (max-width: 1750px) {
+  #panorama {
+    height: 450px;
+    background-image: url('../photos/panorama_medium.jpg');
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  #panorama {
+    height: 300px;
+    background-image: url('../photos/panorama_tablet.jpg');
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  #panorama {
+    height: 600px; width: 100%;
+    background-image: url('../photos/panorama_phone.jpg');
+  }
+}
+
 h1, h2, h3 {
   font-family: headings-serif, "Liberation Serif", "Times New Roman", serif;
   color: #444;
+  text-align: center;
+}
+h1 {
+  font-size: 80px;
+  padding: 15px;
+  line-height: 40px;
+}
+h2 {
+  font-size: 60px;
+  padding: 10px;
+  line-height: 30px;
 }
 
 .centred-element {
