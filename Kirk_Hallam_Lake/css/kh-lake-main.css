@@ -27,17 +27,19 @@ body {
     background-image: url('../photos/panorama_large.jpg');
   }
 }
-@media (min-width: 1024px) and (max-width: 1750px) {
+@media (min-width: 1025px) and (max-width: 1750px) {
   #panorama {
     height: 450px;
     background-image: url('../photos/panorama_medium.jpg');
   }
+  .hamburger-phone-menu { display: none;}
 }
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   #panorama {
     height: 300px;
     background-image: url('../photos/panorama_tablet.jpg');
   }
+  .hamburger-phone-menu { display: none;}
 }
 @media (min-width: 300px) and (max-width: 600px) {
   #panorama {
@@ -70,7 +72,13 @@ h2 {
 #mission-statement { text-align: justify; }
 
 ul.bottom-nav {
-
+  
 }
-.hamburger-phone-menu { display: hidden; }
+ul.bottom-nav li { 
+  display: inline-block;
+  list-style-type: none; 
+  background: #ccc;
+  color: white;
+}
+
 
