@@ -22,36 +22,14 @@ body {
   /* background-image: url('../photos/panorama_large.jpg'); */
   background-size: 100% 100%;
 }
-@media (min-width: 1750px) {
-  #panorama { 
-    background-image: url('../photos/panorama_large.jpg');
-  }
-}
-@media (min-width: 1025px) and (max-width: 1750px) {
-  #panorama {
-    height: 450px;
-    background-image: url('../photos/panorama_medium.jpg');
-  }
-  .hamburger-phone-menu { display: none;}
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-  #panorama {
-    height: 300px;
-    background-image: url('../photos/panorama_tablet.jpg');
-  }
-  .hamburger-phone-menu { display: none;}
-}
-@media (min-width: 300px) and (max-width: 600px) {
-  #panorama {
-    height: 600px; width: 100%;
-    background-image: url('../photos/panorama_phone.jpg');
-  }
-}
+.row#panorama { outline: none; text-decoration: none; }
 
+/* headings styles */
 h1, h2, h3 {
   font-family: headings-serif, "Liberation Serif", "Times New Roman", serif;
   color: #444;
   text-align: center;
+  text-decoration: none; 
 }
 h1 {
   font-size: 80px;
@@ -64,13 +42,18 @@ h2 {
   line-height: 30px;
 }
 
+/* picture styles, not the gallery */
 .centred-element {
   margin: auto auto;
   text-align: center;
 }
 
+/* typography styles ---------------------------------------------- */
 #mission-statement { text-align: justify; }
 
+
+/* links and nav bars --------------------------------------------- */
+a { text-decoration: none; }
 ul.bottom-nav {
   
 }
@@ -80,5 +63,43 @@ ul.bottom-nav li {
   background: #ccc;
   color: white;
 }
+
+
+
+/* media size breaks bit ------------------------------------------- */
+/* large screens like mine */
+@media (min-width: 1750px) {
+  #panorama { 
+    background-image: url('../photos/panorama_large.jpg');
+  }
+}
+
+/* medium sized desktop screens */
+@media (min-width: 1025px) and (max-width: 1750px) {
+  #panorama {
+    height: 450px;
+    background-image: url('../photos/panorama_medium.jpg');
+  }
+  .hamburger-phone-menu { display: none;}
+}
+
+/* tablets or large phones */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #panorama {
+    height: 300px;
+    background-image: url('../photos/panorama_tablet.jpg');
+  }
+  .hamburger-phone-menu { display: none;}
+}
+
+/* mobile phones */
+@media (min-width: 300px) and (max-width: 600px) {
+  #panorama {
+    height: 600px; width: 100%;
+    background-image: url('../photos/panorama_phone.jpg');
+  }
+  .bottom-nav { display: none; }
+}
+
 
 
